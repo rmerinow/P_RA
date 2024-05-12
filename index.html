@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Ejemplo de Realidad Aumentada con AR.js y A-Frame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
@@ -11,10 +12,10 @@
         <!-- Marcador Hiro -->
         <a-marker preset="hiro">
             <!-- Objeto 3D que se muestra cuando se detecta el marcador -->
-            <a-box position="0 0 0.5" rotation="0 45 0" color="red"></a-box>
+            <a-box position="0 0 0.5" rotation="0 45 0" material="color: red;"></a-box>
         </a-marker>
         <!-- Configuración de la cámara -->
-        <a-camera-static></a-camera-static>
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
